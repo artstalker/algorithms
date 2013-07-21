@@ -7,8 +7,8 @@
     <ProjectGuid>{B84F8A45-96EB-4886-86A3-91955D2F6ECC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Assign_Collinear_Points</RootNamespace>
-    <AssemblyName>Assign-Collinear-Points</AssemblyName>
+    <RootNamespace>Algorithms</RootNamespace>
+    <AssemblyName>Algorithms</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,6 +43,22 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puzzle\Board.cs" />
+    <Compile Include="Puzzle\Solver.cs" />
+    <Compile Include="Sorts\MergeSort.cs" />
+    <Compile Include="Sorts\PriorityQueue.cs" />
+    <Compile Include="Sorts\QuickSort.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Puzzle04.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Test2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

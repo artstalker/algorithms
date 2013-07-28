@@ -43,6 +43,8 @@ namespace Algorithms.Puzzle
 				previousBoard = board;
 			}
 			int k = 0;
+
+			
 		}
 
 		public bool IsSolvable

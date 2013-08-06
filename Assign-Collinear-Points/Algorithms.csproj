@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kd-Tree\KdTree.cs" />
+    <Compile Include="Kd-Tree\KdTreeSolver.cs" />
+    <Compile Include="Kd-Tree\LeftLeaningRedBlackTree.cs" />
     <Compile Include="Kd-Tree\Point2D.cs" />
     <Compile Include="Kd-Tree\PointSETcs.cs" />
     <Compile Include="Kd-Tree\RectHV.cs" />
@@ -53,6 +56,9 @@
     <Compile Include="Sorts\QuickSort.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="KdTreeTest.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Puzzle04.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

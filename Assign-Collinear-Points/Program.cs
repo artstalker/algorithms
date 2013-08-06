@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
+
+using Algorithms.Kd_Tree;
 using Algorithms.Puzzle;
 
 namespace Algorithms
@@ -15,7 +19,10 @@ namespace Algorithms
 		static  List<Point>  Points = new List<Point>();
 		static void Main(string[] args)
 		{
-			Solver.Handle("Puzzle04.txt");
+			Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+			//Solver.Handle("Puzzle04.txt");
+			KdTreeSolver.Solve("KdTreeTest.txt");
+
 			//var lines = File.ReadAllLines(args[0]).Skip(1);
 
 			//foreach (var line in lines)
